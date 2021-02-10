@@ -12,11 +12,11 @@ class App{
         if ($url == NULL) {
            $url = [$this->controller];
         }
-        if (file_exists('../app/controllers/'.ucfirst(strtolower($url[0])).".php")) {
+        if (file_exists('./app/controllers/'.ucfirst(strtolower($url[0])).".php")) {
             $this->controller = ucfirst(strtolower($url[0]));
             unset($url[0]);
         }
-        require_once '../app/controllers/'.$this->controller.'.php';
+        require_once './app/controllers/'.$this->controller.'.php';
         $this->controller = new $this->controller;
                 
 
