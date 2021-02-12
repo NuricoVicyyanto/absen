@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="<?=base?>public/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?=base?>public/css/bootstrap.css">
     <link rel="stylesheet" href="<?=base?>public/css/dataTables.bootstrap4.min.css">
-    
+
     <!-- css -->
     <link rel="stylesheet" href="<?=base?>public/style.css">
 

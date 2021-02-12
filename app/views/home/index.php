@@ -10,15 +10,15 @@
           <div class="col-lg-6">
                 <div class="shadow p-3 mb-5 bg-white rounded ">
                     <div class="d-flex justify-content-center">
-                        <div class="p-2">Data Mahasiswa</div>
-                    </div>             
+                        <div class="p-2"><a href="<?=base?>siswa/">Data Siswa</a></div>
+                    </div>
                 </div>
           </div>
           <div class="col-lg-6">
                 <div class="shadow p-3 mb-5 bg-white rounded ">
                     <div class="d-flex justify-content-center">
-                        <div class="p-2">Data Guru</div>
-                    </div>             
+                        <div class="p-2"><a href="<?=base?>guru/">Data Guru</a></div>
+                    </div>
                 </div>
           </div>
         </div>
