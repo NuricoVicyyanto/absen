@@ -9,6 +9,6 @@ class About extends Controller {
      $this->view('partials/sidebar');
      $this->view('about/index',$data);
      $this->view('partials/footer');
-     
+    
     }
 }
