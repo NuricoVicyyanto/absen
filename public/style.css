@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
+body, html{
+  font-family: 'Poppins', sans-serif;;
+  font-weight: 400;
+}
 
 #wrapper {
   overflow-x: hidden;
@@ -14,13 +19,44 @@ transition: margin .25s ease-out;
 }
 
 #sidebar-wrapper .sidebar-heading {
-padding: 0.875rem 1.25rem;
-font-size: 1.2rem;
+  padding: 0.865rem 1.25rem;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 #sidebar-wrapper .list-group {
-width: 15rem;
+  width: 15rem;
 }
+#sidebar-wrapper .list-group a:hover {
+  font-weight: 500;
+}
+
+/* icon navbar */
+#sidebar-wrapper .list-group .dash{
+  color:#023047;
+}
+#sidebar-wrapper .list-group .absensi{
+  color:#06d6a0;
+}
+#sidebar-wrapper .list-group .pengguna{
+  color:#fb8500;
+}
+#sidebar-wrapper .list-group .siswa{
+  color: #920909;
+}
+#sidebar-wrapper .list-group .guru{
+  color: #006d77;
+}
+#sidebar-wrapper .list-group .kelas{
+  color: #ffb703;
+}
+#sidebar-wrapper .list-group .mapel{
+  color: #5a189a;
+}
+#sidebar-wrapper .list-group .laporan{
+  color: #1b4332;
+}
+/* end icon nav */
 
 #page-content-wrapper {
 min-width: 100vw;
