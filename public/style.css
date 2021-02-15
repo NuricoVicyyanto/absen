@@ -61,6 +61,114 @@ transition: margin .25s ease-out;
 #page-content-wrapper {
 min-width: 100vw;
 }
+#page-content-wrapper p{
+  color:#a5a58d;
+}
+/* absensi */
+#page-content-wrapper .absen{
+  border-left: 3px solid #06d6a0;
+}
+#page-content-wrapper .absen h3 {
+  color:#06d6a0;
+  font-weight: 600;
+}
+#page-content-wrapper .absen a {
+  color:#495057;
+  text-decoration: none;
+}
+#page-content-wrapper .absen a:hover {
+  color:#06d6a0;
+  text-decoration: none;
+}
+/* end */
+
+/* siswa */
+#page-content-wrapper .siswa{
+  border-left: 3px solid #920909;;
+}
+#page-content-wrapper .siswa h3 {
+  color:#920909;
+  font-weight: 600;
+}
+#page-content-wrapper .siswa a {
+  color:#495057;
+  text-decoration: none;
+}
+#page-content-wrapper .siswa a:hover {
+  color:#920909;
+  text-decoration: none;
+}
+/* end */
+/* guru */
+#page-content-wrapper .guru{
+  border-left: 3px solid #006d77;;
+}
+#page-content-wrapper .guru h3 {
+  color:#006d77;
+  font-weight: 600;
+}
+#page-content-wrapper .guru a {
+  color:#495057;
+  text-decoration: none;
+}
+#page-content-wrapper .guru a:hover {
+  color:#006d77;
+  text-decoration: none;
+}
+/* end */
+/* kelas */
+#page-content-wrapper .kelas{
+  border-left: 3px solid #ffb703;
+}
+#page-content-wrapper .kelas h3 {
+  color:#ffb703;
+  font-weight: 600;
+}
+#page-content-wrapper .kelas a {
+  color:#495057;
+  text-decoration: none;
+}
+#page-content-wrapper .kelas a:hover {
+  color:#ffb703;
+  text-decoration: none;
+}
+/* end */
+
+/* mapel */
+#page-content-wrapper .mapel{
+  border-left: 3px solid #5a189a;
+}
+#page-content-wrapper .mapel h3 {
+  color:#5a189a;;
+  font-weight: 600;
+}
+#page-content-wrapper .mapel a {
+  color:#495057;
+  text-decoration: none;
+}
+#page-content-wrapper .mapel a:hover {
+  color:#5a189a;
+  text-decoration: none;
+}
+/* end */
+
+/* laporan */
+#page-content-wrapper .laporan{
+  border-left: 3px solid #1b4332;
+}
+#page-content-wrapper .laporan h3 {
+  color:#1b4332;
+  font-weight: 600;
+}
+#page-content-wrapper .laporan a {
+  color:#495057;
+  text-decoration: none;
+}
+#page-content-wrapper .laporan a:hover {
+  color:#1b4332;;
+  text-decoration: none;
+}
+/* end */
 
 #wrapper.toggled #sidebar-wrapper {
 margin-left: 0;
