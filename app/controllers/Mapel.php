@@ -11,4 +11,3 @@ class Mapel extends Controller
         $this->view('partials/footer');
     }
 }
- 
