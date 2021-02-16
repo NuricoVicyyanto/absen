@@ -62,7 +62,7 @@ transition: margin .25s ease-out;
 min-width: 100vw;
 }
 #page-content-wrapper p{
-  color:#a5a58d;
+  color:#6c757d;
 }
 /* absensi */
 #page-content-wrapper .absen{
@@ -114,6 +114,10 @@ min-width: 100vw;
 #page-content-wrapper .guru a:hover {
   color:#006d77;
   text-decoration: none;
+}
+#page-content-wrapper .guru .icon-guru {
+  font-size:3em; 
+  color:#e9ecef;
 }
 /* end */
 /* kelas */

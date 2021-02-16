@@ -9,9 +9,20 @@
           </div>
           <div class="col-lg-4">
                 <div class="shadow p-3 mb-4 bg-white rounded absen">
-                    <div class="d-flex justify-content-center">
-                        <div class="pt-2 pr-2"><h3>200</h3></div>
-                        <div class="pt-2"><p>Absensi</p></div>
+                <div class="row">
+                        <div class="col-lg-8">
+                          <div class="d-flex justify-content-center">
+                            <div class="pt-3 pr-2"><h3 class="">200</h3></div>
+                            <div class="pt-3"><p>Absensi</p></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                              <div class="d-flex justify-content-center">
+                                <div class="p-2 icon-guru">
+                                  <i class="far fa-user" style=""></i>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-end">
                       <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
@@ -31,9 +42,20 @@
           </div>
           <div class="col-lg-4">
                 <div class="shadow p-3 mb-4 bg-white rounded guru">
-                    <div class="d-flex justify-content-center">
-                        <div class="pt-2 pr-2"><h3 class="">200</h3></div>
-                        <div class="pt-2"><p>Guru</p></div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                          <div class="d-flex justify-content-center">
+                            <div class="pt-3 pr-2"><h3 class="">200</h3></div>
+                            <div class="pt-3"><p>Guru</p></div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                              <div class="d-flex justify-content-center">
+                                <div class="p-2 icon-guru">
+                                  <i class="far fa-user" style=""></i>
+                                </div>
+                              </div>
+                        </div>
                     </div>
                     <div class="d-flex justify-content-end">
                       <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
@@ -73,6 +95,7 @@
                     </div>
                 </div>
           </div>
+          
         </div>
       </div>
     </div>
