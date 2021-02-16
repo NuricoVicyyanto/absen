@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
+                      <div class=""><a href="">Lihat Data <i class="fas fa-angle-right"></i></a></div>
                     </div>
                 </div>
           </div>
@@ -36,7 +36,7 @@
                         <div class="pt-2"><p>Siswa</p></div>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
+                      <div class=""><a href="">Lihat Data <i class="fas fa-angle-right"></i></a></div>
                     </div>
                 </div>
           </div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
+                      <div class=""><a href="<?=base?>guru">Lihat Data <i class="fas fa-angle-right"></i></a></div>
                     </div>
                 </div>
           </div>
@@ -69,7 +69,7 @@
                         <div class="pt-2"><p>Kelas</p></div>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
+                      <div class=""><a href="<?=base?>kelas">Lihat Data <i class="fas fa-angle-right"></i></a></div>
                     </div>
                 </div>
           </div>
@@ -80,7 +80,7 @@
                         <div class="pt-2"><p>Mapel</p></div>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
+                      <div class=""><a href="<?=base?>mapel">Lihat Data <i class="fas fa-angle-right"></i></a></div>
                     </div>
                 </div>
           </div>
@@ -91,7 +91,7 @@
                         <div class="pt-2"><p>Laporan</p></div>
                     </div>
                     <div class="d-flex justify-content-end">
-                      <div class=""><a href="">Liat Data <i class="fas fa-angle-right"></i></a></div>
+                      <div class=""><a href="">Lihat Data <i class="fas fa-angle-right"></i></a></div>
                     </div>
                 </div>
           </div>

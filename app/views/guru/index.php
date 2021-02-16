@@ -3,7 +3,7 @@
           <div class="col-lg-12">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">Data Guru</li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-chalkboard-teacher m-1"></i>Data Guru</li>
               </ol>
             </nav>
           </div>
@@ -19,7 +19,7 @@
                         </tr>
                       </thead>
                       <tbody>
-                      <?php
+                      <?php 
                       $no = 1;
                       foreach ($data['guru'] as $x) :?>
                         <tr>
