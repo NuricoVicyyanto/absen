@@ -27,6 +27,27 @@ transition: margin .25s ease-out;
 #sidebar-wrapper .list-group {
   width: 15rem;
 }
+
+#sidebar-wrapper .list-group .admin .admin-a{
+  padding-top: 6px;
+  color: #343a40;
+  font-size: 14px;
+  font-weight: 600;
+}
+#sidebar-wrapper .list-group .admin-span span{
+  /* padding-top: 6px; */
+  color: #adb5bd;
+  font-size: 14px;
+  font-weight: 500;
+}
+#sidebar-wrapper .list-group .admin-span #admin-i{
+  /* padding-top: 6px; */
+  color:green;
+  font-size: 10px;
+  margin-right: 2px;
+  padding-bottom: 2px;
+}
+
 #sidebar-wrapper .list-group a:hover {
   font-weight: 500;
 }

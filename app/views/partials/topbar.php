@@ -4,20 +4,28 @@
     <div class="border-right" id="sidebar-wrapper">
       <div class="sidebar-heading border-bottom bg-light">Absensi Siswa</div>
       <div class="list-group list-group-flush ">
-        <div class="list-group-item d-flex justify-content-center ">
-
-          <img src="<?=base?>public/img/user.jpg" alt="" class="img-thumbnail w-50 " >
-              <div class="dropdown">
-                <a class="dropdown-toggle p-2"
-                        type="button" id="dropdownMenu1" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false" style="font-size:12px">
-                        Rifjan Jundila
-                </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                  <a class="dropdown-item" href="#!">Action</a>
-                  <a class="dropdown-item" href="#!">Another action</a>
+        <div class="list-group-item ">
+          <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center">
+                  <img src="<?=base?>public/img/user.jpg" alt="" class="img-thumbnail w-50 " >
+            </div>
+            <div class="col-lg-12">
+                <div class="d-flex justify-content-center admin">
+                  <div class="btn-group dropright">
+                    <a type="button" class="dropdown-toggle admin-a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Administrator
+                    </a>
+                    <div class="dropdown-menu" x-placement="right-start" style="position: absolute; transform: translate3d(111px, 0px, 0px); top: 0px; left: 0px; will-change: transform;">
+                      <a class="dropdown-item" href="#">Setting</a>
+                      <a class="dropdown-item" href="#">Ganti Password</a>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                <div class="d-flex justify-content-center admin-span">
+                    <span><i class="fas fa-circle" id="admin-i"></i>Rifjan Jundila</span>
+                </div>
+            </div>
+          </div>
         </div>
         <a href="<?=base?>home" class="list-group-item list-group-item-action"><i class="fas fa-tachometer-alt mr-2 dash"></i>Dashboard</a>
         <a href="<?=base?>" class="list-group-item list-group-item-action"><i class="far fa-clock mr-2 absensi"></i>Absensi</a>
