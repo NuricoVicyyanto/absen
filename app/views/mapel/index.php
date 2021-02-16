@@ -8,9 +8,21 @@
             </nav>
           </div>
         </div>
-        <div class="btn-group" role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Kelas X</button>
-          <button type="button" class="btn btn-secondary">Kelas XI</button>
-          <button type="button" class="btn btn-secondary">Kelas XII</button>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#one" role="tab" aria-controls="pills-home" aria-selected="true">Kelas X</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#two" role="tab" aria-controls="pills-profile" aria-selected="false">Kelas XI</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#three" role="tab" aria-controls="pills-contact" aria-selected="false">Kelas XII</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
+        <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="pills-profile-tab">.dddd.</div>
+        <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="pills-contact-tab">dsda.</div>
+      </div>
 </div>
 </div>
