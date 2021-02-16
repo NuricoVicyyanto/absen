@@ -64,6 +64,10 @@ min-width: 100vw;
 #page-content-wrapper p{
   color:#6c757d;
 }
+#page-content-wrapper .icon-style {
+  font-size:3em; 
+  color:#e9ecef;
+}
 /* absensi */
 #page-content-wrapper .absen{
   border-left: 3px solid #06d6a0;
@@ -115,10 +119,7 @@ min-width: 100vw;
   color:#006d77;
   text-decoration: none;
 }
-#page-content-wrapper .guru .icon-guru {
-  font-size:3em; 
-  color:#e9ecef;
-}
+
 /* end */
 /* kelas */
 #page-content-wrapper .kelas{
