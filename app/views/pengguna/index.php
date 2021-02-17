@@ -17,36 +17,36 @@
                         <thead>
                             <tr>
                                 <th>No</th>
+                                <th>Foto</th>
                                 <th>Nama Lengkap</th>
                                 <th>Username</th>
-                                <th>Status</th>
-                                <th>Keterangan</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Tiger Nixon</td>
-                                <td>System Architect</td>
-                                <td>Edinburgh</td>
-                                <td>61</td>
-                                <td>2011/04/25</td>
-                                <td>
-                                    <a href="" data-toggle="tooltip" data-placement="left" title="Edit data" ><i class="fas fa-edit text-warning"></i></a>
-                                    <a href="" data-toggle="tooltip" data-placement="top" title="Hapus data" ><i class="fas fa-trash-alt text-danger"></i></a>
-                                </td>
-                            </tr>
+                            <?php
+                                $no = 1; 
+                                foreach ($data['user'] as $x ): ?>
+                                <?php
+                                    if ($x == 0) {
+                                       echo "Data Tidak ada";
+                                    }else {
+                                        ?>
+                                            <tr>
+                                                <td><?=$no++;?></td>
+                                                <td><?=$x['foto_user']?></td>
+                                                <td><?=$x['username']?></td>
+                                                <td><?=$x['nama_lengkap']?></td>
+                                                <td>
+                                                    <a href="" data-toggle="tooltip" data-placement="left" title="Edit data" ><i class="fas fa-edit text-warning"></i></a>
+                                                    <a href="" data-toggle="tooltip" data-placement="top" title="Hapus data" ><i class="fas fa-trash-alt text-danger"></i></a>
+                                                </td>
+                                            </tr>
+                                        <?php
+                                    }
+                                ?>
+                            <?php endforeach; ?>
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>No</th>
-                                <th>Nama Lengkap</th>
-                                <th>Username</th>
-                                <th>Status</th>
-                                <th>Keteranga</th>
-                                <th>Aksi</th>
-                            </tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
