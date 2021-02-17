@@ -82,6 +82,9 @@ transition: margin .25s ease-out;
 #page-content-wrapper {
 min-width: 100vw;
 }
+#page-content-wrapper .li-dash{
+  color: red;
+}
 #page-content-wrapper p{
   color:#6c757d;
 }

@@ -25,6 +25,9 @@
     });
     $(function(){
       $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="edit-kiri"]').tooltip();
+      $('[data-toggle="edit-bawah"]').tooltip();
+      $('[data-toggle="edit-atas"]').tooltip();                       
     });
 
   </script>
