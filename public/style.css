@@ -83,7 +83,16 @@ transition: margin .25s ease-out;
 min-width: 100vw;
 }
 #page-content-wrapper .li-dash{
-  color: red;
+  color: #495057;
+}
+#page-content-wrapper .li-dash a{
+  color: #495057;
+  font-weight: 500;
+}
+#page-content-wrapper .li-dash a:hover{
+  color: #212529;
+  font-weight: 500;
+  text-decoration: none;
 }
 #page-content-wrapper p{
   color:#6c757d;

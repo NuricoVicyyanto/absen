@@ -3,7 +3,7 @@
             <div class="col-lg-12">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item li-dash"><i class="fas fa-tachometer-alt m-1"></i><a href="">Dashboard</a></li>
+                        <li class="breadcrumb-item li-dash"><i class="fas fa-tachometer-alt m-1"></i><a href="<?=base?>">Dashboard</a></li>
                         <li class="breadcrumb-item active" aria-current="page"><?=$data['judul']?></li>
                     </ol>
                 </nav>
@@ -39,7 +39,6 @@
                                                 <td><?=$x['nama_lengkap']?></td>
                                                 <td>
                                                     <div class="btn-group" role="group" aria-label="Basic example">
-                                                        <a type="button" class="btn btn-info" data-toggle="edit-kiri" data-placement="left" title="Detail data" ><i class="fas fa-info"></i></a>
                                                         <a type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>
                                                         <a type="button" class="btn btn-danger" data-toggle="edit-atas" data-placement="right" title="Hapus data"><i class="fas fa-trash-alt"></i></a>
                                                     </div>
@@ -48,6 +47,7 @@
                                         <?php
                                     }
                                 ?>
+
                             <?php endforeach; ?>
                         </tbody>
                     </table>
