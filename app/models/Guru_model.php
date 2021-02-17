@@ -1,8 +1,8 @@
 <?php
 
-class Guru_model 
+class Guru_model
 {
- 
+
     public function getALLguru()
     {
        $this->stmt = $this->dbh->prepare("SELECT * FROM tb_guru");
