@@ -1,11 +1,12 @@
 <div class="container-fluid mt-4">
         <div class="row">
           <div class="col-lg-12">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-graduation-cap mr-2"></i><?=$data['judul']?></li>
-              </ol>
-            </nav>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item li-dash"><i class="fas fa-tachometer-alt m-1"></i><a href="<?=base?>">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><?=$data['judul']?></li>
+                    </ol>
+                </nav>
             <div class="shadow p-4 mb-4 bg-white rounded">
                 <div class="row">
                     <div class="col-lg-2">
