@@ -12,12 +12,16 @@
     <div class="col-lg-12">
       <div class="shadow p-3 mb-4 bg-white rounded">
         <div class="pb-3">
-          <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahdata"><i
+              class="fas fa-plus"></i> Tambah Data</button>
+
         </div>
+
         <table id="datapengguna" class="table table-striped table-bordered" style="width:100%">
           <thead>
             <tr>
               <th scope="col">No</th>
+              <th scope="col">Kode Mata Pelajaran</th>
               <th scope="col">Mata Pelajaran</th>
               <th scope="col">Aksi</th>
             </tr>
@@ -32,6 +36,7 @@
                                         ?>
           <tr>
             <td><?=$no++;?></td>
+            <td><?=$x['kode_mapel']?></td>
             <td><?=$x['mt_pelajaran']?></td>
             <td>
               <div class="btn-group" role="group" aria-label="Basic example">
@@ -110,12 +115,38 @@
           <?php endforeach; ?>
 
         </table>
+
+        <!-- modal dari tambah data -->
+        <div class="modal fade" id="tambahdata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tambah Kelas</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form action="">
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Kode Mata Pelajaran</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Nama Mata Pelajaran</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+                  <button type="submit" class="btn btn-success">Tambah</button>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-</div>
 </div>
 <!-- /#page-content-wrapper -->
 </div>
