@@ -243,14 +243,13 @@
             <div class="form-group">
                 <label for="formGroupExampleInput">Wali Kelas</label>
                 <div class="form-group">
-                    <select class="form-control" id="make1">
-                    <option selected>Wali Kelas</option>
-                    <option>Udin Saifullah</option>
-                    <option>Sumiyati</option>
-                    <option>Sukijan</option>
-                    <option>Sujiman</option>
-                    <option>Ujang</option>
-                    </select>
+                <select data-live-search="true" data-live-search-style="startsWith" class="selectpicker form-control">
+                    <option value="4444">4444</option>
+                    <option value="Fedex">Fedex</option>
+                    <option value="Elite">Elite</option>
+                    <option value="Interp">Interp</option>
+                    <option value="Test">Test</option>
+                </select>
                 </div>
             </div>
         </div>

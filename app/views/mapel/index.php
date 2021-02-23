@@ -7,12 +7,12 @@
             Mata Pelajaran</li>
         </ol>
       </nav>
-    </div>
+    </div> 
 
     <div class="col-lg-12">
       <div class="shadow p-3 mb-4 bg-white rounded">
         <div class="pb-3">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahdata"><i
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambah_mapel"><i
               class="fas fa-plus"></i> Tambah Data</button>
 
         </div>
@@ -21,23 +21,23 @@
           <thead>
             <tr>
               <th scope="col">No</th>
-              <th scope="col">Kode Mata Pelajaran</th>
               <th scope="col">Mata Pelajaran</th>
+              <th scope="col">Tanggal</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
           <?php
-                                $no = 1;
-                                foreach ($data['mapel'] as $x ): ?>
+            $no = 1;
+             foreach ($data['mapel'] as $x ): ?>
           <?php
-                                    if ($x == 0) {
-                                        echo "Data Tidak ada";
-                                    }else {
-                                        ?>
+             if ($x == 0) {
+                 echo "Data Tidak ada";
+             }else {
+          ?>
           <tr>
             <td><?=$no++;?></td>
-            <td><?=$x['kode_mapel']?></td>
             <td><?=$x['mt_pelajaran']?></td>
+            <td><?=$x['created_at']?></td>
             <td>
               <div class="btn-group" role="group" aria-label="Basic example">
                 <a type="button" class="btn btn-info" data-placement="left" title="Detail data" data-toggle="modal"
@@ -116,8 +116,14 @@
 
         </table>
 
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /#page-content-wrapper -->
+
         <!-- modal dari tambah data -->
-        <div class="modal fade" id="tambahdata" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="tambah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -126,28 +132,20 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <form action="">
+              <form action="<?=base?>mapel/tambah" method="post">
                 <div class="modal-body">
                   <div class="form-group">
-                    <label for="formGroupExampleInput">Kode Mata Pelajaran</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
-                  </div>
-                  <div class="form-group">
                     <label for="formGroupExampleInput">Nama Mata Pelajaran</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput">
+                    <input type="text" class="form-control" id="mt_pelajaran" name="mt_pelajaran" required>
                   </div>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
                   <button type="submit" class="btn btn-success">Tambah</button>
                 </div>
-            </div>
+              </form>
+              </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /#page-content-wrapper -->
 </div>
 <!-- /#wrapper -->

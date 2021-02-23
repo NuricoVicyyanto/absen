@@ -8,6 +8,9 @@
     <script src="<?=base?>public/js/jquery.dataTables.min.js"></script>
     <script src="<?=base?>public/js/dataTables.bootstrap4.min.js"></script>
     <script src="<?=base?>public/js/bootstrap.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="<?=base?>public/bootstrap-select-1.13.14/dist/js/bootstrap-select.min.js"></script>
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

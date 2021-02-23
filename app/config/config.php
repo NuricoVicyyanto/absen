@@ -1,6 +1,6 @@
 <?php
 // Untuk memanggil url
-define ('base','http://localhost/absensi_app/');
+define ('base','https://localhost/absensi_app/');
 // end
 
 define('DB_HOST','localhost');

@@ -9,7 +9,7 @@ class Mapel_model{
 //         return $this->stmt->fetchAll(PDO::FETCH_ASSOC);
 //     }
 // }
-private $table = 'mapel';
+    private $table = 'mapel';
     private $db;
     
     public function __construct() {
@@ -31,4 +31,15 @@ private $table = 'mapel';
         $this->db->bind('id', $id);
         return $this->db->single();
     }    
+    public function tambahMapel($data)
+    {
+        $date = date('Y-m-d H:i:s');
+        $query = "INSERT INTO mapel VALUES (NULL, :mt_pelajaran, :created_at, NULL, NULL)";
+        $this->db->query($query);
+        $this->db->bind('mt_pelajaran', $data['mt_pelajaran']);
+        $this->db->bind('created_at', $date);
+        $this->db->execute();
+        return $this->db->rowCount();
+
+    }
 }
