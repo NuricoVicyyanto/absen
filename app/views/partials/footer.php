@@ -32,7 +32,14 @@
       $('[data-toggle="edit-bawah"]').tooltip();
       $('[data-toggle="edit-atas"]').tooltip();                       
     });
-
+  
+    $('#lihat').click(function(){
+      if(document.getElementById('lihat').checked) {
+        $('#pass').get(0).type = 'text';
+      } else {
+          $('#pass').get(0).type = 'password';
+      }
+    });
   </script>
   </body>
 </html>

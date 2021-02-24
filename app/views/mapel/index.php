@@ -124,7 +124,6 @@
 <!-- /#page-content-wrapper -->
 
 <!-- modal dari tambah data -->
-<form method="post">
   <div class="modal fade" id="tambah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -149,6 +148,5 @@
       </div>
     </div>
   </div>
-</form>
 </div>
 <!-- /#wrapper -->
