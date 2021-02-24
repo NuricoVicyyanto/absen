@@ -3,11 +3,12 @@
     <div class="col-lg-12">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-book m-1"></i>Data
-            Mata Pelajaran</li>
+          <li class="breadcrumb-item li-dash"><i class="fas fa-tachometer-alt m-1"></i><a href="<?=base?>">Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page"><i class="fas fa-book m-1"></i><?=$data['judul']?></li>
         </ol>
       </nav>
-    </div> 
+    </div>
 
     <div class="col-lg-12">
       <div class="shadow p-3 mb-4 bg-white rounded">
@@ -122,30 +123,32 @@
 </div>
 <!-- /#page-content-wrapper -->
 
-        <!-- modal dari tambah data -->
-        <div class="modal fade" id="tambah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Kelas</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <form action="<?=base?>mapel/tambah" method="post">
-                <div class="modal-body">
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">Nama Mata Pelajaran</label>
-                    <input type="text" class="form-control" id="mt_pelajaran" name="mt_pelajaran" required>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
-                  <button type="submit" class="btn btn-success">Tambah</button>
-                </div>
-              </form>
-              </div>
-          </div>
+<!-- modal dari tambah data -->
+<form method="post">
+  <div class="modal fade" id="tambah_mapel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Tambah Kelas</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <form action="<?=base?>mapel/tambah" method="post">
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nama Mata Pelajaran</label>
+              <input type="text" class="form-control" id="mt_pelajaran" name="mt_pelajaran" required>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Batal</button>
+            <td><input type="submit" name="submit" value="TAMBAH" class="btn btn-success"></td>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</form>
 </div>
 <!-- /#wrapper -->
