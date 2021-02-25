@@ -17,11 +17,11 @@
                         <hr>
                                 <div class="row d-flex justify-content-center">
                                     <div class="col-lg-11" >
-                                        <form method="post" action="<?=base?>pengguna/tambah">
+                                        <form method="post" action="<?=base?>pengguna/tambahData" enctype="multipart/form-data">
                                             <div class="form-group row">
                                                 <label for="inputEmail3" class="col-sm-2 col-form-label">Foto Pengguna</label>
                                                 <div class="col-sm-10">
-                                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                                <input type="file" class="form-control-file" id="exampleFormControlFile1" name="foto">
                                                 <span class="badge badge-info">Ekstensi JPG | JPEG | PNG</span>
                                                 </div>
                                             </div>
@@ -53,8 +53,8 @@
                                                 <label for="user" class="col-sm-2 col-form-label">Status</label>
                                                 <div class="col-sm-10">
                                                     <select class="form-control" name="status">
-                                                        <option value="0" disabled>Super Admin</option>
-                                                        <option value="1" >Admin</option>
+                                                        <option value="SuperAdmin" disabled>Super Admin</option>
+                                                        <option value="Admin">Admin</option>
                                                     </select>
                                                     <small id="emailHelp" class="form-text text-muted">Untuk mengganti hak akses hubungi SuperAdmin</small>
                                                 </div>

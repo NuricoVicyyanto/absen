@@ -9,6 +9,11 @@
                 </nav>
             </div>
             <div class="col-lg-12">
+                <?php
+                    Flash::getFlash();
+                ?>
+            </div>
+            <div class="col-lg-12">
                 <div class="shadow p-3 mb-4 bg-white rounded">
                     <div class="pb-3">
                     <a type="button" href="<?=base?>pengguna/tambah" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</a>
@@ -20,6 +25,7 @@
                                 <th>Foto</th>
                                 <th>Nama Lengkap</th>
                                 <th>Username</th>
+                                <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
@@ -34,9 +40,13 @@
                                         ?>
                                             <tr>
                                                 <td><?=$no++;?></td>
-                                                <td><?=$x['foto_user']?></td>
-                                                <td><?=$x['username']?></td>
+                                                <td class="w-25">
+                                                    
+                                                    <img src="<?=base?>public/img/<?=$x['foto_user']?>" class="img-thumbnail w-50" alt="...">
+                                                </td>
                                                 <td><?=$x['nama_lengkap']?></td>
+                                                <td><?=$x['username']?></td>
+                                                <td><?=$x['status']?></td>
                                                 <td>
                                                     <div class="btn-group" role="group" aria-label="Basic example">
                                                         <a type="button" class="btn btn-warning"  data-toggle="edit-bawah" data-placement="bottom" title="Edit data" ><i class="fas fa-edit"></i></a>
