@@ -9,6 +9,11 @@
                 </nav>
             </div>
             <div class="col-lg-12">
+                <?php
+                    Flash::getFlash();
+                ?>
+            </div>
+            <div class="col-lg-12">
                 <div class="shadow p-3 mb-4 bg-white rounded">
                     <div class="pb-3">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahGuru"><i class="fas fa-plus"></i> Tambah Data</button>
@@ -69,58 +74,59 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <form action="">
+          <form action="<?=base?>guru/tambahData" method="POST" enctype="multipart/form-data">
             <div class="modal-body">
               <div class="form-group row">
                 <label for="foto" class="col-sm-3 col-form-label">Foto Guru</label>
                 <div class="col-sm-9">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="customFile">
+                    <input type="file" class="custom-file-input" id="customFile" name="foto" required>
                     <label class="custom-file-label" for="customFile">Choose file</label>
                   </div>
+                  <span class="badge badge-info">Ekstensi JPG | JPEG | PNG</span>
                 </div>
               </div>
               <div class="form-group row">
                 <label for="nis" class="col-sm-3 col-form-label">NIP Guru</label>
                 <div class="col-sm-9">
-                  <input type="number" class="form-control" id="nip" name="nip">
+                  <input type="number" class="form-control" id="nip" name="nip" required>
                   <small id="nis" class="form-text text-muted">Jumlah NIP harus berjumlah 16 karakter.</small>                    
                 </div>
               </div>
               <div class="form-group row">
                 <label for="nama" class="col-sm-3 col-form-label">Nama Lengkap</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="nama" name="nama">
+                  <input type="text" class="form-control" id="nama" name="nama" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label for="nama" class="col-sm-3 col-form-label">Username</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="user" name="user">
+                  <input type="text" class="form-control" id="user" name="user" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label for="nama" class="col-sm-3 col-form-label">Email</label>
                 <div class="col-sm-9">
-                  <input type="email" class="form-control" id="email" name="email">
+                  <input type="email" class="form-control" id="email" name="email" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label for="nama" class="col-sm-3 col-form-label">Password</label>
                 <div class="col-sm-9">
-                  <input type="password" class="form-control" id="pass" name="pass">
+                  <input type="password" class="form-control" id="pass" name="pass" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label for="nama" class="col-sm-3 col-form-label">NO HP/WA</label>
                 <div class="col-sm-9">
-                  <input type="number" class="form-control" id="nohp" name="nohp">
+                  <input type="number" class="form-control" id="nohp" name="nohp" required>
                 </div>
               </div>
               <div class="form-group row">
                 <label for="alamat" class="col-sm-3 col-form-label">ALamat Guru</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="alamat" name="alamat">
+                  <input type="text" class="form-control" id="alamat" name="alamat" required> 
                 </div>
               </div>
               <div class="form-group row">
@@ -129,7 +135,7 @@
                   <select class="selectpicker form-control" data-live-search="true" id="mapel" name="mapel"> 
                     <?php
                         foreach ($data['mapel'] as $x) :?>
-                          <option data-tokens="<?=$x['mt_pelajaran']?>" value="<?=?>"><?=$x['mt_pelajaran']?></option>
+                          <option data-tokens="<?=$x['mt_pelajaran']?>" value="<?=$x['id']?>"><?=$x['mt_pelajaran']?></option>
                     <?php endforeach; ?>  
                   </select>
                 </div>
@@ -137,7 +143,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Batal</button>
-              <button type="button" class="btn btn-success">Simpan</button>
+              <button type="submit" class="btn btn-success">Simpan</button>
             </div>
           </form>
         </div>
