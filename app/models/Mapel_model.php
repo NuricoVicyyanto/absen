@@ -33,6 +33,7 @@ class Mapel_model{
     }    
     public function tambahMapel($data)
     {
+        date_default_timezone_set('Asia/Jakarta');
         $date = date('Y-m-d H:i:s');
         $query = "INSERT INTO mapel VALUES (NULL, :mt_pelajaran, :created_at, NULL, NULL)";
         $this->db->query($query);

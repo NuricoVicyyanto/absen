@@ -33,13 +33,12 @@
         <a href="<?=base?>siswa" class="list-group-item list-group-item-action"><i class="fas fa-user-graduate mr-2 siswa"></i> Data Siswa</a>
         <a href="<?=base?>guru" class="list-group-item list-group-item-action"><i class="far fa-user mr-2 guru"></i> Data Guru</a>
         <a href="<?=base?>kelas" class="list-group-item list-group-item-action"><i class="fas fa-graduation-cap mr-2 kelas"></i>Data Kelas</a>
-        <a href="<?=base?>mapel" class="list-group-item list-group-item-action"><i class="fas fa-book mr-2 mapel"></i>Data Mapel</a>
-        <a href="<?=base?>" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-list mr-2 laporan"></i>Laporan</a>
-        <!-- <a class="list-group-item list-group-item-action"  data-toggle="collapse" data-target="#demo">Siswa</a>
+        <a class="list-group-item list-group-item-action" href=""  data-toggle="collapse" data-target="#demo"><i class="fas fa-book mr-2 mapel"></i>Mata Pelajaran</a>
         <div id="demo" class="collapse">
-          <a href="#" class="list-group-item list-group-item-action">Data Siswa</a>
-          <a href="#" class="list-group-item list-group-item-action">Data Kelas</a>
-        </div> -->
+          <a href="<?=base?>mapel" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Pelajaran</a>
+          <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-angle-right"></i> Jam Pelajaran</a>
+        </div>
+        <a href="<?=base?>" class="list-group-item list-group-item-action"><i class="fas fa-clipboard-list mr-2 laporan"></i>Laporan</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->

@@ -11,4 +11,13 @@ class Siswa extends Controller {
      $this->view('partials/footer');
     
     }
+    public function tambahData()
+    {
+        $allowed = array('jpeg', 'jpg','png');
+        $filename = $_FILES['foto']['name'];
+        $ext = pathinfo($filename, PATHINFO_EXTENSION);
+        if (!in_array($ext, $allowed )) {
+            # code...
+        }
+    }
 }

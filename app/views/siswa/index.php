@@ -11,7 +11,7 @@
             <div class="col-lg-12">
                 <div class="shadow p-3 mb-4 bg-white rounded">
                     <div class="pb-3">
-                    <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Tambah Data</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tambahSiswa"><i class="fas fa-plus"></i> Tambah Data</button>
                     </div>
                     <table id="datapengguna" class="table table-striped table-bordered" style="width:100%">
                         <thead>
@@ -59,3 +59,61 @@
     <!-- /#page-content-wrapper -->
 </div>
   <!-- /#wrapper -->
+  
+    <!-- Tambah Siswa -->
+    <div class="modal fade bd-example-modal-lg" id="tambahSiswa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tambah Siswa</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <form action="">
+            <div class="modal-body">
+              <div class="form-group row">
+                <label for="foto" class="col-sm-3 col-form-label">Foto Siswa</label>
+                <div class="col-sm-9">
+                <input type="file" class="form-control-file" id="foto" name="gambar">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="nis" class="col-sm-3 col-form-label">NIS Siswa</label>
+                <div class="col-sm-9">
+                  <input type="number" class="form-control" id="nis" name="nis">
+                  <small id="nis" class="form-text text-muted">Jumlah NIS harus berjumlah 16 karakter.</small>                    
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="nama" class="col-sm-3 col-form-label">Nama Lengkap</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="nama" name="nama">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="alamat" class="col-sm-3 col-form-label">ALamat Siswa</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="alamat" name="alamat">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="kelas" class="col-sm-3 col-form-label">Kelas Siswa</label>
+                <div class="col-sm-9">
+                  <select class="selectpicker form-control" data-live-search="true">
+                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Batal</button>
+              <button type="button" class="btn btn-success">Simpan</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end tambah siswa -->

@@ -27,7 +27,7 @@
         public function tambahPengguna($data)
         {
             $pass = password_hash($data['pass'], PASSWORD_DEFAULT);
-            $imagePath='./public/img/';
+            $imagePath='./public/img/users/';
             $image = $_FILES['foto']['name'];
             $path = $imagePath . $image;
             $target_file = $imagePath . basename($_FILES['foto']['name']);
@@ -50,8 +50,6 @@
                $this->db->bind('status', $data['status']);
                $this->db->execute();
                return $this->db->rowCount();
-
-               
             }
             
         }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 17, 2021 at 09:42 AM
+-- Generation Time: Mar 02, 2021 at 07:41 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -70,7 +70,7 @@ CREATE TABLE `guru` (
 
 CREATE TABLE `kelas` (
   `id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
+  `guru_id` int(11) NOT NULL,
   `nama_kelas` varchar(11) NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` datetime NOT NULL,
@@ -86,10 +86,20 @@ CREATE TABLE `kelas` (
 CREATE TABLE `mapel` (
   `id` int(11) NOT NULL,
   `mt_pelajaran` varchar(20) NOT NULL,
-  `created_at` datetime NOT NULL,
-  `updated_at` datetime NOT NULL,
-  `deleted_at` datetime NOT NULL
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `deleted_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mapel`
+--
+
+INSERT INTO `mapel` (`id`, `mt_pelajaran`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(5, 'qwr', '2021-02-24 10:41:11', NULL, NULL),
+(6, 'Bhs Indonesia', '2021-02-25 07:55:05', NULL, NULL),
+(7, 'IPS', '2021-02-25 15:08:58', NULL, NULL),
+(8, 'qwrtqwt', '2021-03-01 18:55:51', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -117,8 +127,17 @@ CREATE TABLE `users` (
   `foto_user` varchar(250) NOT NULL,
   `nama_lengkap` varchar(150) NOT NULL,
   `username` varchar(150) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `password` varchar(100) NOT NULL,
+  `status` enum('SuperAdmin','Admin') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `foto_user`, `nama_lengkap`, `username`, `password`, `status`) VALUES
+(12, 'me.jpg', 'Rifjan Jundila', 'Jan', '$2y$10$7G889gPa8bxYZHipIhacYOMDmYKKymHfv445/yPl.fRcPBqT1oE5.', 'Admin'),
+(13, 'feed IG-1.png', 'qwrwq', 'rifjan', '$2y$10$Bl2OOLOZmxXq.F9fJqk/LethQcUPHt1KtQSkY1CMFNe85eYWQsVwC', 'Admin');
 
 --
 -- Indexes for dumped tables
@@ -145,7 +164,7 @@ ALTER TABLE `guru`
 --
 ALTER TABLE `kelas`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `user_id` (`user_id`);
+  ADD KEY `user_id` (`guru_id`);
 
 --
 -- Indexes for table `mapel`
@@ -186,13 +205,13 @@ ALTER TABLE `guru`
 -- AUTO_INCREMENT for table `mapel`
 --
 ALTER TABLE `mapel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables
@@ -216,7 +235,7 @@ ALTER TABLE `guru`
 -- Constraints for table `kelas`
 --
 ALTER TABLE `kelas`
-  ADD CONSTRAINT `kelas_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+  ADD CONSTRAINT `kelas_ibfk_1` FOREIGN KEY (`guru_id`) REFERENCES `guru` (`id`);
 
 --
 -- Constraints for table `siswa`
